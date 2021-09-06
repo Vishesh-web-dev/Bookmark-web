@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Bookmark landing page</title>
+</head>
+<body>
+  <header id="header-desktop">
+    <img src="./images/logo-bookmark.svg" alt="" id="desktop-icon">
+    <nav class="nav1" id="nav1">
+      <ul class="ul">
+        <li class="li"><a href="#Features" class="nav-links">Features</a></li>
+        <li class="li"><a href="#Pricing" class="nav-links">Download</a></li>
+        <li class="li"><a href="#" class="nav-links">Contact</a></li>
+        <li class="li"><a href="#" class="nav-links login">Login</a></li>
+      </ul>
+    </nav>
+    <img src="./images/icon-hamburger.svg" alt="" id="hamburger" onclick="ham()">
+  </header>
+  <header id="header-mobile" >
+  <div class="icons">
+    <img src="./images/logo-bookmark.svg" alt="">
+    <img src="./images/icon-close.svg" alt="" id="close" onclick="clo()">
+  </div>
+    <nav>
+      <ul>
+        <li><a href="#Features" class="nav-links-2" onclick="clo()">Features</a></li>
+        <li><a href="#Pricing" class="nav-links-2" onclick="clo()">Download</a></li>
+        <li><a href="#" class="nav-links-2">Contact</a></li>
+        <li><a href="#" class="nav-links-2 login-2">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+  <section class="sec-1">
+    <div class="flex-1"> 
+      <h1 class="heading-sec-1">
+        A Simple Bookmark Manager
+      </h1>
+      <p class="para-sec-1">
+        A clean and simple interface to organize your favourite websites. Open a new 
+        browser tab and see your sites load instantly. Try it for free.
+      </p>
+      <div class="btns"><!-- "display = "flex";" -->
+        <div class="btn-1">
+          Get it on Chrome
+        </div>
+        <div class="btn-2">
+          Get it on Firefox
+        </div>
+      </div>
+    </div>
+    <div class="flex-2">
+      <img src="./images/illustration-hero.svg" alt="">
+    </div>
+    <div class="bg-sec-1"></div>
+  </section>
+
+  
+  <section class="sec-2">
+    <div class="top">
+     <a href="#header-desktop"> icon</a>
+    </div>
+    <div class="header-sec-2">
+      <h1 class="title-sec-2" id="Features">
+       Features
+      </h1>
+     <p class="discription-sec-2">
+        Our aim is to make it quick and easy for you to access your favourite websites. 
+        Your bookmarks sync between your devices so you can access them on the go.
+     </p>
+    </div>
+
+    <div class="content-changer">
+      <table>
+        <tr>
+          <td class="first-changer"  id="first-changer" onclick="oneFunc()">Simple Bookmarking</td>
+          <td class="second-changer" id="second-changer"  onclick="twoFunc()">Speedy Searching</td>
+          <td class="third-changer"  id="third-changer" onclick="threeFunc()">Easy Sharing</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="mover">
+      <div class="slider" id="slider"></div>
+    </div>
+
+
+    <div class="content-changer-mobile">
+
+          <div class="line"></div>
+          
+          <div class="first-changer-mobile"  id="first-changer-mobile" onclick="oneFunc()">Simple Bookmarking</div>
+          
+          <div class="line"></div>
+
+          <div class="second-changer-mobile" id="second-changer-mobile"  onclick="twoFunc()">Speedy Searching</div>
+          
+          <div class="line"></div>
+
+          <div class="third-changer-mobile"  id="third-changer-mobile" onclick="threeFunc()">Easy Sharing</div>
+          
+          <div class="line"></div>
+
+    </div>
+
+    <div class="first main" id="one">
+      <div class="img-sec-2 left">
+        <img src="./images/illustration-features-tab-1.svg" alt="">
+      </div>
+      <div class="sec-2-content">
+        <h1 class="sec-2-heading">
+          Bookmark in one click
+        </h1>
+        <p class="sec-2-para">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+          gives you complete control over how you manage your favourite sites.
+        </p>
+        <div class="sec-2-btn">More Info</div>
+      </div>
+    </div>
+
+    <div class="second main" style="display: none;" id="two">
+      <div class="img-sec-2 left">
+        <img src="./images/illustration-features-tab-2.svg" alt="">
+      </div>
+      <div class="sec-2-content">
+        <h1 class="sec-2-heading">
+          Intelligent search
+        </h1>
+        <p class="sec-2-para">Our powerful search feature will help you find saved sites in no time at all. 
+          No need to trawl through all of your bookmarks.
+        </p>
+        <div class="sec-2-btn">More Info</div>
+      </div>
+    </div>
+
+    <div class="third main" style="display: none;" id="three">
+      <div class="img-sec-2 left">
+        <img src="./images/illustration-features-tab-3.svg" alt="">
+      </div>
+      <div class="sec-2-content">
+        <h1 class="sec-2-heading">
+          Share your bookmarks
+        </h1>
+        <p class="sec-2-para">Easily share your bookmarks and collections with others. Create a shareable 
+          link that you can send at the click of a button.
+        </p>
+        <div class="sec-2-btn">More Info</div>
+      </div>
+    </div>
+  </section>
+ 
+  
+  <section class="sec-3" id="Pricing">
+    <div class="header-sec-2">
+      <h1 class="title-sec-2" id="Features">
+        Download the extension
+      </h1>
+     <p class="discription-sec-2">
+      We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+      got a favourite you’d like us to prioritize.
+     </p>
+    </div>
+     <div class="grid">
+      <div class="card card-1">
+       <img src="./images/logo-chrome.svg" alt="" class="card-logo">
+       <div class="card-heading">Add to Chrome</div>
+       <div class="card-para">Minimum version 62</div>
+       
+       <img class="card-line" src="./images/bg-dots.svg" alt="">
+       <div class="card-btn">Add & Install Extension</div>
+       </div>
+      <div class="card card-2">
+       <img src="./images/logo-firefox.svg" alt="" class="card-logo">
+       <div class="card-heading">Add to Firefox</div>
+       <div class="card-para">Minimum version 55</div>
+       <img class="card-line" src="./images/bg-dots.svg" alt="">
+       <div class="card-btn">Add & Install Extension</div>
+       </div>
+      <div class="card card-3">
+       <img src="./images/logo-opera.svg" alt="" class="card-logo">
+       <div class="card-heading">Add to Opera</div>
+       <div class="card-para">Minimum version 46</div>
+       <img class="card-line" src="./images/bg-dots.svg" alt="">
+       <div class="card-btn">Add & Install Extension</div>
+       </div>
+  </section>
+  
+<!-- <img src="./images/icon-error.svg" alt=""> -->
+  
+    <section class="sec-4 FAQ">
+      <div class="header-sec-2">
+        <h1 class="title-sec-2" id="FAQ">
+          Frequently Asked Questions
+        </h1>
+       <p class="discription-sec-2">
+        Here are some of our FAQs. If you have any other questions you’d like 
+        answered please feel free to email us.
+       </p>
+      </div>
+    </section>
+  
+
+ 
+
+  
+
+  
+  
+  
+
+  <!-- Question 1 -->
+  What is Bookmark?
+
+  <!-- Answer 1 -->
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+
+  <!-- Question 2 -->
+  How can I request a new browser?
+
+  <!-- Answer 2 -->
+  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+
+  <!-- Question 3 -->
+  Is there a mobile app?
+
+  <!-- Answer 3 -->
+  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+  sollicitudin ex et ultricies bibendum.
+
+  <!-- Question 4 -->
+  What about other Chromium browsers?
+
+  <!-- Answer 4 -->
+  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+  vitae neque eget nisl gravida pellentesque non ut velit.
+
+  More Info
+
+  35,000+ already joined
+
+  Stay up-to-date with what we’re doing
+
+  Contact Us
+
+  Features
+  Pricing
+  Contact
+  
+  <script src="app.js"></script>
+</body>
+</html>
