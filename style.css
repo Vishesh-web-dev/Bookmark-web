@@ -682,3 +682,123 @@ hr{
 }
 }
 
+/*sec-5*/
+.sec-5{
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+}
+.sec-5-main{
+    width: 25vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    text-align: center;
+}
+
+.sec-5-sub-heading{
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  word-spacing: 7px;
+  margin: 5rem 0 3rem 0;
+}
+.sec-5-heading{
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+}
+.sec-5-input{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 2.5rem 0;
+}
+.sec-5-input::after{
+  content: "Whoops,make sure it's an email";
+  position: absolute;
+  left: 0;
+  font-size: 12px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-align: left;
+  width:calc(60%  - 24px); /*width - padding*/
+  background-color: hsl(0, 94%, 66%);
+  padding: 4px 12px;
+  bottom: -22px; /*font size + padding*/
+}
+.error{
+  position: absolute;
+  right: 42%;
+  top: 50%;
+  transform: translate(0,-50%);
+  /* display: none; */
+}
+#email{
+  width: 60%;
+  padding: 10px 15px;
+  color: hsl(229, 31%, 21%);
+  font-weight: bold;
+  border-radius: 3px;
+  border: none;
+}
+.contact-btn{
+  border: 2px solid hsl(0, 94%, 66%);
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  color: white;
+  background-color: hsl(0, 94%, 66%);
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+.contact-btn:hover{
+  color: hsl(0, 94%, 66%);
+  background-color: white;
+}
+
+@media (max-width: 750px){
+  .sec-5-main {
+      width: 60vw;
+      min-width: 100px;
+  }
+}
+@media (max-width: 550px){
+  .sec-5-main {
+      width: 80vw;
+      min-width: 100px;
+  }
+  .sec-5-sub-heading{
+    font-size: 12px;
+  }
+  .sec-5-heading{
+    font-size: 28px;
+  }
+  .contact-btn{
+    font-size: 13px;
+  }
+  #email{
+    width: 60%;
+    padding: 8px 13px;
+  }
+  .error{
+    position: absolute;
+    right: 42%;
+  }
+}
+@media (max-width: 350px){
+  .sec-5-main {
+      width: 90vw;
+      min-width: 100px;
+  }
+  .sec-5-sub-heading{
+    font-size: 10px;
+  }
+  .sec-5-heading{
+    font-size: 24px;
+  }
+  .contact-btn{
+    font-size: 11px;
+    padding: 0.5rem;
+  }
+}

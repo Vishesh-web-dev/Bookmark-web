@@ -141,3 +141,14 @@ function seeAnswer4(answer,arrow){
     i4 = 1;
   }
 }
+
+function validate(email){
+  value = email.value;
+  if (value.includes("@") &&( (value.includes(".com")) ||(value.includes(".in")) ) && (!(value.includes(" "))) ) {
+    console.log("its a email");
+  }else if(value == ""){
+   console.log("cant be empty");
+  }else{
+    console.log("wrong format");
+  }
+}
