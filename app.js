@@ -82,4 +82,62 @@ function threeFunc() {
   slider.style.transform = "translate(355%)";
   slider.style.transition = "all 0.5s ease";
 }
+var i1 = 0,i2=0,i3=0,i4=4;
 
+
+function seeAnswer1(answer,arrow){
+  if (i1 == 1) {
+    answer.style.display = "none";
+    arrow.style.transform = "rotate(360deg)";
+    arrow.style.transition = "all 0.5s";
+    i1 = 0;
+  }
+  else{
+    answer.style.display = "initial";
+    arrow.style.transform = "rotate(180deg)";
+    arrow.style.transition = "all 0.5s";
+    i1 = 1;
+  }
+}
+function seeAnswer2(answer,arrow){
+  if (i2 == 1) {
+    answer.style.display = "none";
+    arrow.style.transform = "rotate(360deg)";
+    arrow.style.transition = "all 0.5s";
+    i2 = 0;
+  }
+  else{
+    answer.style.display = "initial";
+    arrow.style.transform = "rotate(180deg)";
+    arrow.style.transition = "all 0.5s";
+    i2 = 1;
+  }
+}
+function seeAnswer3(answer,arrow){
+  if (i3 == 1) {
+    answer.style.display = "none";
+    arrow.style.transform = "rotate(360deg)";
+    arrow.style.transition = "all 0.5s";
+    i3 = 0;
+  }
+  else{
+    answer.style.display = "initial";
+    arrow.style.transform = "rotate(180deg)";
+    arrow.style.transition = "all 0.5s";
+    i3 = 1;
+  }
+}
+function seeAnswer4(answer,arrow){
+  if (i4 == 1) {
+    answer.style.display = "none";
+    arrow.style.transform = "rotate(360deg)";
+    arrow.style.transition = "all 0.5s";
+    i4 = 0;
+  }
+  else{
+    answer.style.display = "initial";
+    arrow.style.transform = "rotate(180deg)";
+    arrow.style.transition = "all 0.5s";
+    i4 = 1;
+  }
+}

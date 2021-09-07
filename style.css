@@ -450,7 +450,8 @@ header#header-mobile {
   width: max-content;
   font-size: 12px;
   font-weight: 500;
-  padding: 0.7rem 1.2rem;
+  padding: 0.75rem 1.2rem;
+  cursor: pointer;
 }
 .sec-2-btn:hover {
   color: hsl(231, 69%, 60%);
@@ -607,3 +608,75 @@ header#header-mobile {
       margin-top: 7rem;
     }
 }
+
+/*sec-4*/
+
+.qna {
+    width: 40vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-width: 700px;
+}
+.questions{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:baseline;
+  margin: 1.5rem 0;
+  
+}
+.ques{
+  color: hsl(229, 31%, 21%);
+  font-weight: 500;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.arrow{
+  color: red;
+  margin-left: 5px;
+  cursor: pointer;
+}
+hr{
+  border: 0.5px solid rgba(211, 211, 211, 0.7);
+}
+.ques:hover{
+  color: hsl(0, 94%, 66%);
+}
+.answers{
+  color: hsl(240, 1%, 29%);
+  margin: 0.5rem 0 2.5rem 0;
+  line-height: 2;
+  font-size: 16px;
+  display: none;
+}
+.sec-4-btn{
+  border-radius: 5px;
+  background-color: hsl(231, 69%, 60%);
+  border: 2px solid hsl(231, 69%, 60%);
+  color: rgba(255, 255, 255, 0.9);
+  width: max-content;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0.75rem 1.2rem;
+  cursor: pointer;
+  margin: 3rem auto 8rem auto;
+}
+.sec-4-btn:hover {
+  color: hsl(231, 69%, 60%);
+  border: 2px solid hsl(231, 69%, 60%);
+  background-color: white;
+}
+@media (max-width: 750px){
+.qna {
+    width: 90vw;
+    min-width: 100px;
+}
+.ques{
+  font-size: 16px;
+}
+.answers{
+  font-size: 14px;
+}
+}
+
