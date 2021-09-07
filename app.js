@@ -82,73 +82,109 @@ function threeFunc() {
   slider.style.transform = "translate(355%)";
   slider.style.transition = "all 0.5s ease";
 }
-var i1 = 0,i2=0,i3=0,i4=4;
+var i1 = 0,
+  i2 = 0,
+  i3 = 0,
+  i4 = 4;
 
-
-function seeAnswer1(answer,arrow){
+function seeAnswer1(answer, arrow) {
+  let que_1 = document.querySelector(".que-1");
   if (i1 == 1) {
     answer.style.display = "none";
     arrow.style.transform = "rotate(360deg)";
     arrow.style.transition = "all 0.5s";
+    que_1.style.color = "hsl(229, 31%, 21%)";
     i1 = 0;
-  }
-  else{
+  } else {
     answer.style.display = "initial";
     arrow.style.transform = "rotate(180deg)";
     arrow.style.transition = "all 0.5s";
+    que_1.style.color = "hsl(0, 94%, 66%)";
+
     i1 = 1;
   }
 }
-function seeAnswer2(answer,arrow){
+function seeAnswer2(answer, arrow) {
+  let que_2 = document.querySelector(".que-2");
+  
   if (i2 == 1) {
     answer.style.display = "none";
     arrow.style.transform = "rotate(360deg)";
     arrow.style.transition = "all 0.5s";
+    que_2.style.color = "hsl(229, 31%, 21%)";
+
     i2 = 0;
-  }
-  else{
+  } else {
     answer.style.display = "initial";
     arrow.style.transform = "rotate(180deg)";
     arrow.style.transition = "all 0.5s";
+    que_2.style.color = "hsl(0, 94%, 66%)";
+
     i2 = 1;
   }
 }
-function seeAnswer3(answer,arrow){
+function seeAnswer3(answer, arrow) {
+  let que_3 = document.querySelector(".que-3");
+
   if (i3 == 1) {
     answer.style.display = "none";
     arrow.style.transform = "rotate(360deg)";
     arrow.style.transition = "all 0.5s";
+    que_3.style.color = "hsl(229, 31%, 21%)";
     i3 = 0;
-  }
-  else{
+  } else {
     answer.style.display = "initial";
     arrow.style.transform = "rotate(180deg)";
     arrow.style.transition = "all 0.5s";
+    que_3.style.color = "hsl(0, 94%, 66%)";
+
     i3 = 1;
   }
 }
-function seeAnswer4(answer,arrow){
+function seeAnswer4(answer, arrow) {
+  let que_4 = document.querySelector(".que-4");
+
   if (i4 == 1) {
     answer.style.display = "none";
     arrow.style.transform = "rotate(360deg)";
     arrow.style.transition = "all 0.5s";
+    que_4.style.color = "hsl(229, 31%, 21%)";
     i4 = 0;
-  }
-  else{
+  } else {
     answer.style.display = "initial";
     arrow.style.transform = "rotate(180deg)";
     arrow.style.transition = "all 0.5s";
+    que_4.style.color = "hsl(0, 94%, 66%)";
+
     i4 = 1;
   }
 }
 
-function validate(email){
+function validate(email) {
+  let error = document.querySelector(".woops");
+  let errorImg = document.querySelector(".error");
   value = email.value;
-  if (value.includes("@") &&( (value.includes(".com")) ||(value.includes(".in")) ) && (!(value.includes(" "))) ) {
-    console.log("its a email");
-  }else if(value == ""){
-   console.log("cant be empty");
-  }else{
-    console.log("wrong format");
+  if (
+    value.includes("@") &&
+    (value.includes(".com") || value.includes(".in")) &&
+    !value.includes(" ")
+  ) {
+    console.log(1);
+  } else if (value == "") {
+    error.textContent = "Email can't be empty";
+    error.style.display = "initial";
+    errorImg.style.display = "initial";
+  } else {
+    error.textContent = "Whoops,make sure it's an email";
+    error.style.display = "initial";
+    errorImg.style.display = "initial";
   }
+}
+
+function errorRemove(email) {
+  email.value = "";
+  let error = document.querySelector(".woops");
+  let errorImg = document.querySelector(".error");
+  error.style.display = "none";
+  errorImg.style.display = "none";
 }

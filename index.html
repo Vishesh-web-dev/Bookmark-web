@@ -208,7 +208,7 @@
 
       <div class="qna">
         <hr>
-        <div class="question-1 questions">
+        <div class="question-1 questions" >
           <div class="que-1 ques" onclick="seeAnswer1(document.querySelector('.answer-1'),document.querySelector('.arrow-1'))">What is Bookmark?</div>
           <img src="./images/icon-arrow.svg" class="arrow arrow-1" onclick="seeAnswer1(document.querySelector('.answer-1'),document.querySelector('.arrow-1'))" alt="">
         </div>
@@ -259,23 +259,28 @@
         <h3 class="sec-5-sub-heading">35,000+ already joined</h3>
         <h1 class="sec-5-heading">Stay up-to-date with what we’re doing</h1>
         <div class="sec-5-input">
+          <div class="woops">Whoops,make sure it's an email</div>
           <img src="./images/icon-error.svg" class="error" alt="" >
-          <input type="email" name="email" id="email" required placeholder="Enter your email address">
+          <input type="email" name="email" id="email" required placeholder="Enter your email address" onclick="errorRemove((document.getElementById('email')))">
           <label class="contact-btn" onclick="validate(document.getElementById('email'))">Contact Us</label>
         </div>
       </div>
     </section>
 
-  
 
-  
+      <footer>
+        <div class="left">
+          <img src="./images/logo-bookmark.svg" class="footer-logo" alt="">
+          <a href="#Features" class="footer-links">Features</a>
+          <a href="#Pricing" class="footer-links">Download</a>
+          <a href="#" class="footer-links">Contact</a>
+        </div>
+        <div class="right">
+          <img src="./images/icon-facebook.svg" alt="" class="facebook">
+          <img src="./images/icon-twitter.svg" alt="" class="twitter">
+        </div>
+      </footer>
 
-  
-
-  Features
-  Pricing
-  Contact
-  
   <script src="app.js"></script>
 </body>
 </html>
