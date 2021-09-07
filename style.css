@@ -447,11 +447,12 @@ header#header-mobile {
   background-color: hsl(231, 69%, 60%);
   border: 2px solid hsl(231, 69%, 60%);
   color: rgba(255, 255, 255, 0.9);
-  width: max-content;
+  width: 110px;
   font-size: 12px;
   font-weight: 500;
   padding: 0.75rem 1.2rem;
   cursor: pointer;
+  text-align: center;
 }
 .sec-2-btn:hover {
   color: hsl(231, 69%, 60%);
@@ -655,7 +656,8 @@ hr{
   background-color: hsl(231, 69%, 60%);
   border: 2px solid hsl(231, 69%, 60%);
   color: rgba(255, 255, 255, 0.9);
-  width: max-content;
+  width: 110px;
+  text-align: center;
   font-size: 12px;
   font-weight: 500;
   padding: 0.75rem 1.2rem;
