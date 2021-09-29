@@ -669,6 +669,9 @@ hr {
   border: 2px solid hsl(231, 69%, 60%);
   background-color: white;
 }
+/* .footer-logo{
+  filter: brightness();
+} */
 @media (max-width: 750px) {
   .qna {
     width: 90vw;
@@ -806,6 +809,7 @@ hr {
   }
 }
 
+/*footer*/
 footer {
   display: flex;
   flex-direction: row;
@@ -819,6 +823,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 40%;
+  position: relative;
 }
 .left img {
   margin-right: 20px;
@@ -833,6 +838,13 @@ footer {
 }
 .left a:hover {
   color: hsl(0, 94%, 66%);
+}
+.bookmark{
+  position: absolute;
+  left: 2.1rem;
+  letter-spacing: 1.5px;
+  color: white;
+  font-weight: 500;
 }
 .facebook {
   margin-right: 15px;
@@ -856,5 +868,13 @@ footer {
   }
   .right {
     margin-top: 0.5rem;
+  }
+  .bookmark{
+    position: absolute;
+    left: 0.7rem;
+    top: 3px;
+    letter-spacing: 1.5px;
+    color: white;
+    font-weight: 500;
   }
 }

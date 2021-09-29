@@ -91,7 +91,7 @@ function seeAnswer1(answer, arrow) {
   let que_1 = document.querySelector(".que-1");
   if (i1 == 1) {
     answer.style.display = "none";
-    arrow.style.transform = "rotate(360deg)";
+    arrow.style.transform = "rotate(720deg)";
     arrow.style.transition = "all 0.5s";
     que_1.style.color = "hsl(229, 31%, 21%)";
     i1 = 0;
